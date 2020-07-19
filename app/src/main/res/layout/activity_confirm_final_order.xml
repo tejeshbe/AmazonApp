@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmFinalOrderActivity">
+    
+    <TextView
+        android:id="@+id/txtCon"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:text="Please Enter your shipment details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+    <EditText
+        android:hint="Enter your name"
+        android:id="@+id/editConName"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_below="@id/txtCon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <EditText
+        android:hint="Enter your phone number"
+        android:id="@+id/editConPhone"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_below="@id/editConName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <EditText
+        android:hint="Enter your address"
+        android:id="@+id/editConAdd"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_below="@id/editConPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <EditText
+        android:hint="Enter your city name"
+        android:id="@+id/editConCity"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_below="@id/editConAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_margin="20dp"
+        android:text="Confirm Order"
+        android:layout_height="wrap_content"></Button>
+
+</RelativeLayout>

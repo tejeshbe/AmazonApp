@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shoppingcart"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_width="300dp"
+        android:src="@drawable/applogo"
+        android:layout_height="100dp">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/loginButtton"
+        android:text="Login"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:background="#07AFF9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+
+        <Button
+            android:id="@+id/registerButtton"
+            android:text="Register"
+            android:layout_weight="1"
+            android:textColor="#07AFF9"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Button>
+
+    </LinearLayout>
+</RelativeLayout>
